@@ -64,7 +64,7 @@ class SimpleEntityDescriptorBuilder implements EntityDescriptorProviderInterface
         X509Certificate $ownCertificate,
         array $acsBindings = array(SamlConstants::BINDING_SAML2_HTTP_POST),
         array $ssoBindings = array(SamlConstants::BINDING_SAML2_HTTP_POST, SamlConstants::BINDING_SAML2_HTTP_REDIRECT),
-        $use = array(KeyDescriptor::USE_ENCRYPTION, KeyDescriptor::USE_SIGNING)
+        $use = array(KeyDescriptor::USE_SIGNING)
     ) {
         $this->entityId = $entityId;
         $this->acsUrl = $acsUrl;
